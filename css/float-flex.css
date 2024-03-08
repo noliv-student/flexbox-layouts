@@ -1,0 +1,19 @@
+article {
+    max-width: 80%;
+    margin: auto;
+}
+
+.float-left {
+    float: left;
+    margin-left: 5px;
+}
+
+.float-right {
+    float: right;
+    margin-right: 5px;
+}
+
+main img {
+    max-width: 320px;
+    margin: 16px;
+}

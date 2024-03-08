@@ -1,9 +1,17 @@
+/* General Page Style */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
 }
 
 /*Navigation*/
@@ -15,12 +23,10 @@ header,
 
 .main-nav {
     background-color: #242424;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
-.main-nav ul li {
-    display: inline-block;
-    margin: 0 12px;
-}   
 
 .main-nav img {
     width: 50px;
@@ -28,44 +34,15 @@ header,
 }
 
 .main-nav ul{
-    display: inline-block;
-    margin-bottom: 10px;
-}
-
-.main-nav > a{
-    vertical-align: bottom;
+    display: flex;
+    gap: 20px;
 }
 
 a {
     color: lightblue;
 }
 
-#spacer {
-    display: inline-block;
-    width: calc(100% - 104px - 220px);
-}
-
 /*Main content*/
-article {
-    max-width: 80%;
-    margin: auto;
-}
-
-.float-left {
-    float: left;
-    margin-left: 5px;
-}
-
-.float-right {
-    float: right;
-    margin-left: 5px;
-}
-
-main img {
-    max-width: 320px;
-    margin: 16px;
-}
-
 .textbox {
     margin: 16px;
     border: 2px solid #333;
@@ -75,10 +52,6 @@ main img {
     min-height: 250px;
 }
 
-.no-image{
-    clear: both;
-}
-
 .post-title {
     margin-bottom: 8px;
     font-size: 24px;
@@ -86,6 +59,10 @@ main img {
 
 /*Footer*/
 footer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
     clear: both;
     padding: 16px;
     color: aliceblue ;
@@ -93,12 +70,14 @@ footer {
     text-align: center;
 }
 
-footer div picture {
-    display: inline-block;
+footer div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 
 footer div img {
     max-width: 100px;
     border-radius: 50px;
-    margin: 15px;
 }
